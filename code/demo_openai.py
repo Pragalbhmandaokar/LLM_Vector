@@ -25,7 +25,7 @@ output_dir = root_path / "data" / "vectorstores"
 vectorestore_file = output_dir / input_filename.split(".")[0] / model
 
 #%% set up the embedding function
-embedding = OpenAIEmbeddings(openai_api_key="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")
+embedding = OpenAIEmbeddings(openai_api_key="")
 
 vectordb = Chroma.from_documents(documents=docs,
                                  embedding=embedding,
